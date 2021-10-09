@@ -9,7 +9,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Zimahome">
+        android:theme="@style/Theme.Clean">
         <activity android:name="ir.arka.cleansample.presentation.ui.activity.SplashActivity">
 
         </activity>

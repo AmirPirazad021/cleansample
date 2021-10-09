@@ -1,2 +1,2 @@
-rootProject.name = "Zimahome"
+rootProject.name = "Clean"
 include ':app'
