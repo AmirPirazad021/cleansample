@@ -1,7 +1,7 @@
 # cleansample
 Kotlin clean architecture project
 #Hilt Di 
-#ViewModel pattern 
+#MVVM pattern 
 #Repository base 
 #use Flow Coroutines for Request
 
