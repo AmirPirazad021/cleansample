@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "214587241354",
+    "project_id": "arka-95153",
+    "storage_bucket": "arka-95153.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214587241354:android:26ef1e9be007e4c34d8e73",
+        "android_client_info": {
+          "package_name": "ir.arka.cleansample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214587241354-ian18c31llpomhn71ftjf8uil4ka1cb7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW44mhUWbgNYQ-ln-j3kAcyjrloyilAmQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214587241354-ian18c31llpomhn71ftjf8uil4ka1cb7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

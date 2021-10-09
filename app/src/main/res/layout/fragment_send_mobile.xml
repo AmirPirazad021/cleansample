@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:ignore="MissingPrefix">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_40mdp"
+                    app:cardCornerRadius="@dimen/_100mdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_top"
+                        android:layout_width="@dimen/_50mdp"
+                        android:layout_height="@dimen/_50mdp"
+                        android:layout_margin="@dimen/_28mdp"
+                        app:srcCompat="@drawable/ic_enter" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/isn"
+                    android:text="@string/enter_app"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14font_mdp"
+                    app:layout_constraintEnd_toEndOf="@+id/cv_top"
+                    app:layout_constraintStart_toStartOf="@+id/cv_top"
+                    app:layout_constraintTop_toBottomOf="@+id/cv_top" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_12mdp"
+                    android:layout_marginTop="@dimen/_4mdp"
+                    android:fontFamily="@font/isn"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/_4mdp"
+                    android:text="@string/login_desc"
+                    android:textSize="@dimen/_10font_mdp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView"
+                    app:layout_constraintStart_toStartOf="@+id/textView"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txt_input"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_12mdp"
+                    android:layout_marginTop="@dimen/_16mdp"
+                    android:hint="@string/mobile_number"
+                    android:textColorHint="@color/hint_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                    <EditText
+                        android:id="@+id/et_mobile_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/_12font_mdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ViewSwitcher
+                    android:id="@+id/vs_send_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_12mdp"
+                    android:layout_marginTop="@dimen/_16mdp"
+                    android:background="@drawable/bg_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_input">
+
+                    <TextView
+                        android:id="@+id/tv_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:fontFamily="@font/isnb"
+                        android:gravity="center"
+                        android:paddingHorizontal="@dimen/_50mdp"
+                        android:paddingVertical="@dimen/_5mdp"
+                        android:text="@string/send_code"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14font_mdp" />
+
+                    <com.github.ybq.android.spinkit.SpinKitView
+                        style="@style/SpinKitView.Small.ThreeBounce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+
+                </ViewSwitcher>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Clean Sample</string>
+    <string name="my_home">خانه</string>
+    <string name="advertisement">آگهی</string>
+    <string name="entertainment">سرگرمی</string>
+    <string name="services">خدمات</string>
+    <string name="profile">حساب کاربری</string>
+    <string name="sp2">All rights reserved by Clean Sample 2020.</string>
+    <string name="sp1">تمامی حقوق برای شرکت محفوظ است۱۳۹۸.</string>
+    <string name="desc">مدیریت خانه به سبک متفاوت</string>
+    <string name="enter_app">ورود</string>
+    <string name="enter_code">کد تایید</string>
+    <string name="login_code">کد تایید به شماره %s ارسال شده است.</string>
+    <string name="login_desc">جهت ورود به برنامه شماره همراه خود را وارد نمایید</string>
+    <string name="send_code">ادامه</string>
+    <string name="mobile_number">شماره موبایل</string>
+    <string name="no_connection">اتصال برقرار نمیباشد</string>
+    <string name="signup">ثبت نام کاربر جدید</string>
+    <string name="first_name">نام</string>
+    <string name="last_name">نام خانوادگی</string>
+    <string name="national_code">کد ملی</string>
+</resources>
